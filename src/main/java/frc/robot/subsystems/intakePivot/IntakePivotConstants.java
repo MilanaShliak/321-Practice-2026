@@ -14,7 +14,7 @@ import edu.wpi.first.units.measure.Current;
 import edu.wpi.first.units.measure.Voltage;
 
 public class IntakePivotConstants {
-        public static final Angle kFeedAngle = Degrees.of(15);
+    public static final Angle kFeedAngle = Degrees.of(15);
     public static final double kFedAngle = kFeedAngle.in(Degrees);
     public static final double kFeeedAngle = kFeedAngle.in(Radian);
 
@@ -25,7 +25,7 @@ public class IntakePivotConstants {
     public static final Current kStatorLimit = Amps.of(40);
     public static final boolean kStatorLimitEnabled = true;
 
-    public static final int kIntakePivotMotorID = 11;
+    public static final int kIntakePivotMotorID = 12;
 
     public static final double kIntakePivotRatio = 142.9;
 

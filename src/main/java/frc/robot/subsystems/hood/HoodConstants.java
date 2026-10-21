@@ -32,4 +32,6 @@ public class HoodConstants {
 
     public static final InvertedValue kInversion = InvertedValue.Clockwise_Positive;
     public static final NeutralModeValue kNeutralMode = NeutralModeValue.Brake;
+
+    public static final double kTargetAngle = 50; 
 }
