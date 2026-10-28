@@ -2,6 +2,8 @@ package frc.robot.subsystems.hood;
 
 import static edu.wpi.first.units.Units.Amps;
 import static edu.wpi.first.units.Units.Degrees;
+import static edu.wpi.first.units.Units.DegreesPerSecond;
+import static edu.wpi.first.units.Units.DegreesPerSecondPerSecond;
 import static edu.wpi.first.units.Units.Radian;
 import static edu.wpi.first.units.Units.Volts;
 
@@ -10,6 +12,8 @@ import com.ctre.phoenix6.signals.NeutralModeValue;
 import com.playingwithfusion.CANVenom.BrakeCoastMode;
 
 import edu.wpi.first.units.measure.Angle;
+import edu.wpi.first.units.measure.AngularAcceleration;
+import edu.wpi.first.units.measure.AngularVelocity;
 import edu.wpi.first.units.measure.Current;
 import edu.wpi.first.units.measure.Voltage;
 
@@ -33,5 +37,9 @@ public class HoodConstants {
     public static final InvertedValue kInversion = InvertedValue.Clockwise_Positive;
     public static final NeutralModeValue kNeutralMode = NeutralModeValue.Brake;
 
-    public static final double kTargetAngle = 50; 
+    public static final Angle kTargetAngle = Degrees.of(50); 
+    public static final Angle kTolerance = Degrees.of(1.5);
+
+    public static final AngularVelocity kMaxVelocity = DegreesPerSecond.of(0);
+    public static final AngularAcceleration kMaxAcceleration = DegreesPerSecondPerSecond.of(0);
 }
